@@ -1,0 +1,80 @@
+html{
+  font-size: 12px;
+    box-sizing: border-box;
+  
+}
+
+body {
+  font-family: Helvetica;
+  background-color: hsl(54, 80%, 80%);
+  margin: 0px;
+
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2rem 95vh 95vh 95vh 95vh;
+}
+nav{
+  height: 5vh;
+  border:1px solid black;
+  display: flex;
+  justify-content: flex-end;
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+a{
+  padding-right: 2.5rem; /* 24px*/
+  font-size: 1.4rem;
+}
+section{
+  border:1px solid black;
+}
+.section1{
+  background: pink;
+  height:95vh;
+  grid-column: 1/4;
+  grid-row: 2;
+}
+.section2{
+  background: lightblue;
+  height:95vh;
+  grid-column: 1/4;
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: 30% 70%;
+
+
+}
+.section3{
+
+  grid-column: 1/4;
+  grid-row: 4;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.section3 div{
+  width:30%;
+  height: 24rem;
+  border:1px;
+
+}
+.section4{
+  grid-column: 1/4;
+  grid-row: 5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+
+
+}
+.splash_page{
+  height: 3.4rem;
+}
+
+div{
+  margin: 0px;
+
+}
